@@ -124,4 +124,4 @@ namespace ConsoleApp1
 
 <h2 id="reference">참조</h2>
 
-1. [Class Template, UserControl Template 다운로드](https://github.com/peponi-paradise/Code-Template)
+1. [Class Template, UserControl Template 다운로드](https://github.com/peponi-paradise/Visual-Studio/tree/main/Code%20Template)
