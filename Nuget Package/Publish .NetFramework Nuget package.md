@@ -227,27 +227,27 @@ namespace TestLibrary
 
 
 1. 필수 항목
-    |항목|내용|비고|
-    |:---:|---|---|
-    |id|NuGet에서 검색할 때 나오는 패키지 이름|`$id$` : 프로젝트 이름|
-    |version|패키지 버전|`$version$` : 어셈블리 버전|
-    |authors|작성자|`$author$` : 어셈블리 정보의 회사와 동일|
-    |description|패키지 설명||
+    |     항목      | 내용                       | 비고                           |
+    |:-----------:|--------------------------|------------------------------|
+    |     id      | NuGet에서 검색할 때 나오는 패키지 이름 | `$id$` : 프로젝트 이름             |
+    |   version   | 패키지 버전                   | `$version$` : 어셈블리 버전        |
+    |   authors   | 작성자                      | `$author$` : 어셈블리 정보의 회사와 동일 |
+    | description | 패키지 설명                   |                              |
 
 <br>
 
 2. 선택 항목
-    |항목|내용|비고|
-    |:---:|---|---|
-    |requireLicenseAcceptance|라이선스 동의 메시지 팝업 여부||
-    |license|라이선스 유형 또는 파일 입력||
-    |readme|README 파일이 있을 경우 등록||
-    |icon|아이콘 등록||
-    |projectUrl|패키지의 홈페이지 등록|[repository](https://learn.microsoft.com/ko-kr/nuget/reference/nuspec#repository)를 사용하는 경우도 있음|
-    |releaseNotes|릴리즈의 정보||
-    |copyright|저작권 정보|`$copyright$` : 어셈블리 정보의 저작권|
-    |tags|패키지 검색 시 사용. ` ` (띄어쓰기)로 구분||
-    |dependencies|종속성 정보 등록|[Dependencies 요소](https://learn.microsoft.com/ko-kr/nuget/reference/nuspec#dependencies-element) 참조|
+    |            항목            | 내용                          | 비고                                                                                                  |
+    |:------------------------:|-----------------------------|-----------------------------------------------------------------------------------------------------|
+    | requireLicenseAcceptance | 라이선스 동의 메시지 팝업 여부           |                                                                                                     |
+    |         license          | 라이선스 유형 또는 파일 입력            |                                                                                                     |
+    |          readme          | README 파일이 있을 경우 등록         |                                                                                                     |
+    |           icon           | 아이콘 등록                      |                                                                                                     |
+    |        projectUrl        | 패키지의 홈페이지 등록                | [repository](https://learn.microsoft.com/ko-kr/nuget/reference/nuspec#repository)를 사용하는 경우도 있음      |
+    |       releaseNotes       | 릴리즈의 정보                     |                                                                                                     |
+    |        copyright         | 저작권 정보                      | `$copyright$` : 어셈블리 정보의 저작권                                                                        |
+    |           tags           | 패키지 검색 시 사용. ` ` (띄어쓰기)로 구분 |                                                                                                     |
+    |       dependencies       | 종속성 정보 등록                   | [Dependencies 요소](https://learn.microsoft.com/ko-kr/nuget/reference/nuspec#dependencies-element) 참조 |
     |files|첨부 파일 등록|
 
 <br>
@@ -276,12 +276,12 @@ namespace TestLibrary
 
 <br>
 
-|번호|내용|비고|
-|:---:|---|---|
-|1|NuGet 홈페이지 우측 상단의 `유저 이름`을 클릭한 후, `API Keys`를 클릭한다|<img src=".NetFramework Image/9.PNG" width="80%">|
-|2|`Key Name` 및 `Glob Pattern` 정보를 입력 후, `Create`를 수행한다|<img src=".NetFramework Image/10.PNG" width="80%">|
-|3|`Manage` 항목에 생성된 Key를 찾아 `Copy` 클릭|<img src=".NetFramework Image/11.PNG" width="80%">|
-|주의사항|API Key는 본인을 제외한 누구도 알면 안됩니다|본인도 모르는 것이 좋을지도..|
+|  번호  | 내용                                                   | 비고                                                 |
+|:----:|------------------------------------------------------|----------------------------------------------------|
+|  1   | NuGet 홈페이지 우측 상단의 `유저 이름`을 클릭한 후, `API Keys`를 클릭한다   | <img src=".NetFramework Image/9.PNG" width="80%">  |
+|  2   | `Key Name` 및 `Glob Pattern` 정보를 입력 후, `Create`를 수행한다 | <img src=".NetFramework Image/10.PNG" width="80%"> |
+|  3   | `Manage` 항목에 생성된 Key를 찾아 `Copy` 클릭                   | <img src=".NetFramework Image/11.PNG" width="80%"> |
+| 주의사항 | API Key는 본인을 제외한 누구도 알면 안됩니다                         | 본인도 모르는 것이 좋을지도..                                  |
 
 <br>
 
@@ -291,10 +291,10 @@ namespace TestLibrary
 
 - 다음 명령을 실행하여 생성된 패키지를 업로드한다.
     
-    |Upload target|Command|
-    |---|---|
-    |NuGet official|`nuget push <package filename> <api key value> -Source https://nuget.org/api/v2/package`|
-    |NuGet test|`nuget push <package filename> <api key value> -Source https://int.nugettest.org/api/v2/package`|
+    | Upload target  | Command                                                                                          |
+    |----------------|--------------------------------------------------------------------------------------------------|
+    | NuGet official | `nuget push <package filename> <api key value> -Source https://nuget.org/api/v2/package`         |
+    | NuGet test     | `nuget push <package filename> <api key value> -Source https://int.nugettest.org/api/v2/package` |
 
 - 정상적으로 Push 명령이 수행된 경우 `Your package was pushed`라는 메세지가 확인되며 작업이 끝난다.
 
